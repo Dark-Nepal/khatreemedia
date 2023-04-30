@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{% static 'img/about-header.jpg'%}');">
+      <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>About</h2>
+        <ol>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li>About</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4" data-aos="fade-up">
+          <div class="col-lg-4">
+            <img src="{% static 'img/about.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8">
+            <div class="content ps-lg-5">
+              <h3>Who we are ?</h3>
+              <p>
+                Our company is specializes in creating and implementing marketing strategies on social media platforms for businesses and organizations. Our main goal is to help the clients build their brand, increase their online presence, engage with their audience, and drive traffic and sales to their website or physical location. Services offered by us can include social media management, content creation, social media advertising, influencer marketing, and analytics and reporting.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> We are the best company in Nepal.</li>
+                <li><i class="bi bi-check-circle-fill"></i> We have 20+ happy client around the world.</li>
+                <li><i class="bi bi-check-circle-fill"></i> We provides best service in our fields.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+ <!-- ======= Why Choose Us Section ======= -->
+ <section id="why-us" class="why-us">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Why Choose Us</h2>
+
+    </div>
+
+    <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-xl-5 img-bg" style="background-image: url('{% static 'img/why-us-bg.jpg' %}')"></div>
+      <div class="col-xl-7 slides  position-relative">
+
+        <div class="slides-1 swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3 class="mb-3">Let's grow your business together</h3>
+               
+                <p>We can help businesses increase their online visibility, engagement, and conversions, while also providing valuable insights and analytics to measure the effectiveness of their campaigns and make data-driven decisions for future marketing efforts.</p>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3 class="mb-3"> We offer, the quality of the work, </h3>
+                
+                <p>We serve good design and aesthetics of their social media posts, the relevance and engagement of their content, the targeting and reach of their advertising campaigns, and the overall impact on the client's business goals and objectives.</p>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3 class="mb-3">Good customer service and communication skills</h3>
+                
+                <p> Khatree Media with strong customer service and communication skills can foster a positive and productive relationship with their clients, leading to better results and a more successful partnership.</p>
+              </div>
+            </div><!-- End slide item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Why Choose Us Section -->
+
+<!-- ======= Call To Action Section ======= -->
+<section id="call-to-action" class="call-to-action mt-5">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <h3>Khatree Media</h3>
+        <p> Interested parties can call us and learn more about the agency's services and expertise.</p>
+        <h1 class="cta-btn" >9827155429</h1>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Call To Action Section -->
+
+
+{% endblock %}

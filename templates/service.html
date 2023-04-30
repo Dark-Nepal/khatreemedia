@@ -1,0 +1,187 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{% static 'img/services-header.jpg' %}');">
+      <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>Services</h2>
+        <ol>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li>Services</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+     <!-- ======= Our Services Section ======= -->
+     <section id="services-list" class="services-list">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Services</h2>
+
+        </div>
+
+        <div class="row g-5">
+
+          <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-amd" style="color: #f57813;"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Ads running and lead generation</a></h4>
+              <p class="description">Lead generation ads are specialized digital ads that allow you to collect data about potential customers who clicked on an ad you strategically placed on a platform.
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-stack" style="color: #15a04a;"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Social Media Management</a></h4>
+              <p class="description">Social media management is the ongoing process of creating and scheduling content designed to grow and nurture an audience across social media platforms</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-search"style="color: #d90769;"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">SEO</a></h4>
+              <p class="description">Getting traffic from free, organic, editorial, or natural search results in search engines. It aims to improve your website's position in search results pages</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-window"style="color: #15bfbc;"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Website Development</a></h4>
+              <p class="description">The tasks associated with creating, building, and maintaining websites and web applications that run online on a browser</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'img/cards-1.jpg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Lead Generation.</h4>
+                    <p>The  lead generation is to generate interest and curiosity in potential customers, capture their contact information, and move them through the sales funnel towards becoming paying customers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'img/cards-2.jpg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Social Media Management.</h4>
+                    <p>Social media management is the process of creating, publishing, and analyzing content on various social media platforms in order to build and maintain an engaging online presence for a business or organization .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'img/cards-3.jpg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Search Engine Optimization</h4>
+                    <p>Search Engine Optimization, is the practice of optimizing a website or online content to rank higher in search engine results pages (SERPs) for specific keywords or phrases .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'img/cards-4.jpg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Website Development</h4>
+                    <p>Website development  involves a combination of technical skills, creativity, and user experience design to create a website that is functional, visually appealing, and easy to use.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Cards Section -->
+
+  <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Testimonials</h2>
+
+    </div>
+
+    <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+    
+          {% for f in feed %}
+      
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              {{f.feedback}}
+            </p>
+            <div class="profile mt-auto">
+              <h3>{{f.fullname}}</h3>
+              <h4>{{f.position}}</h4>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+       {% endfor%}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+
+
+  </main><!-- End #main -->
+
+{% endblock %}
